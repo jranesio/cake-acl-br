@@ -1,6 +1,11 @@
 Plugin para Implementação de ACL no CakePHP 3
 =============================================
 
+## Funciona somente com as versões:
+- PHP 7.2
+- CakePHP 3.5.13 (https://github.com/cakephp/cakephp/releases/download/3.5.13/cakephp-3-5-13.zip)
+Ainda não está compatível com a versão 3.6
+
 # Demo
 http://ribafs.org/demo/
 
@@ -91,7 +96,7 @@ Em AppController.php você pode definir o controller default para usuários não
 
     protected $noAdmins = 'Customers';
 
-# Documentação
+## Documentação
 Alguns detalhes a mais - https://ribafs.github.io/cakephp/cake-acll.pdf
 
 ## Sugestões, colaborações e forks serão muto bem vindos:
