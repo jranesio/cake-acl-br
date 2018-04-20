@@ -1,0 +1,11 @@
+Copiar
+
+- custom.css para webroot/css no raiz do aplicativo
+
+- pdo_error.ctp para src/Template/Error
+
+- AppController.php para src/Controller (sobrescrevendo)
+
+- bootstrap_cli.php para config/ (sobrescrevendo)
+
+

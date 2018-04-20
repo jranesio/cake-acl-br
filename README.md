@@ -1,0 +1,105 @@
+Plugin para Implementação de ACL no CakePHP 3
+=============================================
+
+# Demo
+http://ribafs.org/demo/
+
+Usuário - senha
+- super - super (pode tudo)
+- admin - admin (pode tudo mas somente nas tabelas groups, users e permissions)
+- manager - manager (pode tudo mas somente nas tabelas de negócio, no caso customers)
+- user - user (não pode quase nada, apenas efetuar login e visualizar a index de customers, nada mais)
+
+Idealmente instale em um ambiente de testes para ter maior controle, pois o demos apenas permite selects nas tabelas.
+
+
+[![Licença](https://img.shields.io/packagist/l/doctrine/orm.svg?maxAge=2592000)](https://github.com/ribafs/cake-control-br/blob/master/LICENSE)
+
+URL deste projeto - https://github.com/ribafs/cake-acl-br/
+
+Este plugin inclue o plugin BootstrapUI e o (Twitter) Bootstrap e também inclui os templates do bake do plugin [twbs-cake-plugin](https://github.com/elboletaire/twbs-cake-plugin).
+
+## Principais recursos
+    Template do bake traduzido para pt_BR
+    Menu de topo com o element topmenu
+    Busca com paginação
+    Senhas criptografadas com Bcrypt
+    Controle de Acesso tipo ACL com administração web
+    Dois Layouts: admin e default com o Bootstrap
+    Utilitários do BootstrapUI plugin
+
+## Instalação e uso
+https://github.com/ribafs/cake-acl-br
+
+Criar app:
+
+    cd /var/www/html
+    composer create-project --prefer-dist cakephp/app control1
+
+Instalar Plugin
+
+    cd /var/www/html/control1
+
+    composer require ribafs/cake-acl-br
+
+## Configurar banco
+
+Baixe o plugin, crie o banco e importe o script existente na pasta docs do plugin baixado. Depois edite config/app.php para configurar o banco.
+
+Aproveite e configure também o controller default em config/routes.php para um de seu interesse.
+
+
+## Habilitar o plugin
+
+    bin/cake plugin load CakeAclBr --bootstrap
+
+
+Download do plugin
+
+    https://github.com/ribafs/cake-acl-br/archive/master.zip
+
+Descompactar e abrir o diretório docs, então copiar:
+
+    bootstrap_cli.php para a control1/config (Com isso o Bake gerarará Users com login e logout)
+
+    AppController.php para control1/src/Controller
+
+    cd control1
+    bin/cake bake all groups -t CakeAclBr
+    bin/cake bake all users -t CakeAclBr
+    bin/cake bake all permissions -t CakeAclBr
+    bin/cake bake all customers -t CakeAclBr
+
+## Concedendo permissões
+
+- Comece fazendo login com user e user
+- Veja que ele loga mas não tem acesso nem emsmo ao index de customers
+- Faça logout
+- Faça login com super ou admin
+- Dando permissão para o usuário user acessar o controller Customer e action index
+- Faça logout
+- Faça login como user e veja que agora ele acessa a index do customers. Observe que não aparece o ícone para excluir os registros.
+- Tente acessar qualquer outro action: edit, delete ou mesmo view. Observe também que vários outros recursos não aparecem para o 'user', busca, links, etc
+
+## Controller default
+Em AppController.php você pode definir o controller default para usuários não administradores. Caso não use a tabela customers troque logo no início do AppController por uma de suas tabelas na linha:
+
+    protected $noAdmins = 'Customers';
+
+
+# Documentação
+Alguns detalhes a mais - https://ribafs.github.io/cakephp/cake-acll.pdf
+
+
+## Sugestões, colaborações e forks serão muto bem vindos:
+
+- Erros: português
+- PHP
+- CakePHP
+- ControlComponent.php
+- etc
+
+License
+-------
+
+The MIT License (MIT)

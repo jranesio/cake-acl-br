@@ -1,0 +1,25 @@
+{
+    "name": "ribafs/cake-acl-br",
+    "authors": [
+        {
+            "name": "Ribamar FS",
+            "email": "contato@ribafs.org",
+            "homepage": "http://ribafs.org",
+            "role": "Developer"
+        }
+    ],
+    "description": "Plugin para implementar controle de acesso com bons recursos: busca, bcrypt, template do bake em português, bootstrap",
+    "type": "cakephp-plugin",
+    "keywords": ["cakephp", "acl","bootstrap", "plugin", "busca", "admin", "painel", "bcrypt", "portugues", "controle de acesso"],
+    "license": "MIT",
+    "require": {
+        "php": ">=7.2",
+        "cakephp/cakephp": "<=3.5.13",
+        "friendsofcake/bootstrap-ui": "1.3.0"        
+    },
+    "autoload": {
+        "psr-4": {
+            "CakeControlBr\\": "src"
+        }
+    }
+}
