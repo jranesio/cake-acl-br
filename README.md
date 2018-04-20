@@ -37,12 +37,15 @@ https://github.com/ribafs/cake-acl-br
 
 Criar app:
 
-    cd /var/www/html
-    composer create-project --prefer-dist cakephp/app control1
+    Baixar o cake 3.5.13 daqui:
+    https://github.com/cakephp/cakephp/releases/download/3.5.13/cakephp-3-5-13.zip
+    Ou outra versão anterior. Enquanto o suporte ao Cake atual no sai.
+    Descompacte para seu diretório web
+    cd /var/www/html/acl1   
 
 Instalar Plugin
 
-    cd /var/www/html/control1
+    cd /var/www/html/acl1
 
     composer require ribafs/cake-acl-br
 
@@ -52,11 +55,9 @@ Baixe o plugin, crie o banco e importe o script existente na pasta docs do plugi
 
 Aproveite e configure também o controller default em config/routes.php para um de seu interesse.
 
-
 ## Habilitar o plugin
 
     bin/cake plugin load CakeAclBr --bootstrap
-
 
 Download do plugin
 
@@ -64,11 +65,11 @@ Download do plugin
 
 Descompactar e abrir o diretório docs, então copiar:
 
-    bootstrap_cli.php para a control1/config (Com isso o Bake gerarará Users com login e logout)
+    bootstrap_cli.php para a acl1/config (Com isso o Bake gerarará Users com login e logout)
 
-    AppController.php para control1/src/Controller
+    AppController.php para acl1/src/Controller
 
-    cd control1
+    cd acl1
     bin/cake bake all groups -t CakeAclBr
     bin/cake bake all users -t CakeAclBr
     bin/cake bake all permissions -t CakeAclBr
@@ -90,10 +91,8 @@ Em AppController.php você pode definir o controller default para usuários não
 
     protected $noAdmins = 'Customers';
 
-
 # Documentação
 Alguns detalhes a mais - https://ribafs.github.io/cakephp/cake-acll.pdf
-
 
 ## Sugestões, colaborações e forks serão muto bem vindos:
 
