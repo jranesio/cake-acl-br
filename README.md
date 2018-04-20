@@ -4,6 +4,8 @@ Plugin para Implementação de ACL no CakePHP 3
 # Demo
 http://ribafs.org/demo/
 
+O CakePHP 3.5.13 foi instalado juntamente com o plugin cake-acl-br e configurado para aceitar somente consultas do tipo select. Veja que quando tenta executar delete, update ou insert ele bloqueia e avisa que é apenas um demo. Consegui isso criando um banco e um usuário restrito e apenas com privilégios de select. E depois tratando as mensagens de erro e redirecionando para o logout. Você pode usar quanquer um dos usuários. É interessante que experimente todos os 4, para perceber a diferença de privilégios que eles têm e o ACL do plugin em ação.
+
 Usuário - senha
 - super - super (pode tudo)
 - admin - admin (pode tudo mas somente nas tabelas groups, users e permissions)
