@@ -12,6 +12,8 @@ Usuário - senha
 
 Idealmente instale em um ambiente de testes para ter maior controle, pois o demos apenas permite selects nas tabelas.
 
+## Continuação do cake-control-br
+Este projeto basicamente continua de onde parou o cake-control-br. Este começa com a novidade de uma área para demo. Esta área permite dar uma olhada no plugin implementado e já ver alguma coisa para ver se vale a pena você instalar ou no.
 
 [![Licença](https://img.shields.io/packagist/l/doctrine/orm.svg?maxAge=2592000)](https://github.com/ribafs/cake-control-br/blob/master/LICENSE)
 
@@ -97,7 +99,7 @@ Alguns detalhes a mais - https://ribafs.github.io/cakephp/cake-acll.pdf
 - PHP
 - CakePHP
 - ControlComponent.php
-- etc
+- Ou algo que queira me avisar...
 
 License
 -------
