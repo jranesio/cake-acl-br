@@ -38,7 +38,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
 <?php
     if($loguser){
 ?>
-        <h3 class="titulo"><?php echo $this->fetch('title'). '  '.$this->element('CakeControlBr.topmenu'). '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <spam class="logado">Logado como: <strong>'. __($loguser).'</strong></spam>' ?></h3>
+        <h3 class="titulo"><?php echo $this->fetch('title'). '  '.$this->element('CakeAclBr.topmenu'). '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <spam class="logado">Logado como: <strong>'. __($loguser).'</strong></spam>' ?></h3>
 <?php
     }else{
         echo '<h3 class="titulo">Acesso ao Sistema</h3>';
