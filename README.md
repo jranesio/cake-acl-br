@@ -113,7 +113,7 @@ Em AppController.php você pode definir o controller default para usuários não
 <img src="images/manager.png">
 
 ### Logado como user. Apenas o index de customers e isso foi porque foi concedida esta permissão
-<img src="images/uer.png">
+<img src="images/user.png">
 
 ### Busca
 <img src="images/busca.png">
