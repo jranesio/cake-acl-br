@@ -97,6 +97,9 @@ Descompactar e abrir o diretório docs, então copiar:
 Em AppController.php você pode definir o controller default para usuários não administradores. Caso não use a tabela customers troque logo no início do AppController por uma de suas tabelas na linha:
 
     protected $noAdmins = 'Customers';
+    
+## Algumas imagens/capturas
+<img src="images/super.png">
 
 ## Documentação
 Alguns detalhes a mais - https://ribafs.github.io/cakephp/cake-acll.pdf
