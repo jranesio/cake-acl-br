@@ -35,7 +35,7 @@ class AppController extends Controller
 
         $this->loadComponent('RequestHandler');
         $this->loadComponent('Flash');
-		$this->loadComponent('CakeControlBr.Control'); // Nosso componente
+		$this->loadComponent('CakeAclBr.Control'); // Nosso componente
         $this->loadComponent('Auth', [
             'loginRedirect' => [
                 'controller' => 'Permissions',
@@ -78,9 +78,9 @@ class AppController extends Controller
 	    	// $this->set('template',$layout);
 
 		if($loguser == 'user' || $loguser == 'manager'){
-			$this->viewBuilder()->layout('CakeControlBr.default');
+			$this->viewBuilder()->layout('CakeAclBr.default');
 		}else{
-			$this->viewBuilder()->layout('CakeControlBr.admin');
+			$this->viewBuilder()->layout('CakeAclBr.admin');
 		}
 
 		// Descomente para acesso total aos actions abaixo
