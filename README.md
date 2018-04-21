@@ -3,7 +3,7 @@ Plugin para Implementação de ACL no CakePHP 3
 ## AVISO - POR FAVOR USE O PLUGIN CAKE-CONTROL-BR
 https://github.com/ribafs/cake-control-br
 
-Pois este ainda não está funcionando. Desculpe, stou corrigindo.
+Pois este ainda não está funcionando. Desculpe, estou corrigindo.
 
 **Funciona somente com as versões:**
 - PHP 7.2
