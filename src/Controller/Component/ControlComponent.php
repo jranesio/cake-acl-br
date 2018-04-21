@@ -1,5 +1,5 @@
 <?php
-namespace CakeControlBr\Controller\Component;
+namespace CakeAclBr\Controller\Component;
 
 use Cake\Controller\Component;
 use Cake\Controller\ComponentRegistry;
