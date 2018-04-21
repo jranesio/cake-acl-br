@@ -1,5 +1,4 @@
 Plugin para Implementação de ACL no CakePHP 3
-=============================================
 
 ## AVISO - POR FAVOR USE O PLUGIN CAKE-CONTROL-BR
 https://github.com/ribafs/cake-control-br
