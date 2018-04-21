@@ -99,7 +99,33 @@ Em AppController.php você pode definir o controller default para usuários não
     protected $noAdmins = 'Customers';
     
 ## Algumas imagens/capturas
+
+### Login
 <img src="images/super.png">
+
+### Logado como super. Veja que o menu mostra todos os recursos
+<img src="images/super.png">
+
+### Logado como admin. Veja que apenas groups, users e permissions
+<img src="images/admin.png">
+
+## Logado como manager. Apenas customers
+<img src="images/manager.png">
+
+### Logado como user. Apenas o index de customers e isso foi porque foi concedida esta permissão
+<img src="images/uer.png">
+
+### Busca
+<img src="images/busca.png">
+
+### Veja a customização do CSS do bootstrap
+<img src="images/css_custom.png">
+
+### Veja que em customers o user mostra o username ao invés de id, pois foi customizado o método displayField()
+<img src="images/displayField.png">
+
+### Csutomização dos campos controller e actiion mudando de caixa de texto para combo
+<img src="images/super_add.png">
 
 ## Documentação
 Alguns detalhes a mais - https://ribafs.github.io/cakephp/cake-acll.pdf
