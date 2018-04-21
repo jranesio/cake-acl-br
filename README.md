@@ -1,7 +1,5 @@
 Plugin para Implementação de ACL no CakePHP 3
-
-## AVISO - POR FAVOR USE O PLUGIN CAKE-CONTROL-BR
-https://github.com/ribafs/cake-control-br
+=============================================
 
 Pois este ainda não está funcionando. Desculpe, estou corrigindo.
 
@@ -55,7 +53,7 @@ Criar app:
 Instalar Plugin
 
     cd /var/www/html/acl1
-
+    composer install
     composer require ribafs/cake-acl-br
 
 ## Configurar banco
