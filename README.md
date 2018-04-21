@@ -101,7 +101,7 @@ Em AppController.php você pode definir o controller default para usuários não
 ## Algumas imagens/capturas
 
 ### Login
-<img src="images/super.png">
+<img src="images/login.png">
 
 ### Logado como super. Veja que o menu mostra todos os recursos
 <img src="images/super.png">
