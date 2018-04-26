@@ -49,7 +49,7 @@ Criar app:
     Ou outra versão anterior. Enquanto o suporte ao Cake atual no sai.
     Descompacte para seu diretório web
     cd /var/www/html/acl1   
-
+    
 Instalar Plugin
 
     cd /var/www/html/acl1
@@ -129,6 +129,16 @@ Em AppController.php você pode definir o controller default para usuários não
 
 ## Documentação
 Alguns detalhes a mais - https://ribafs.github.io/cakephp/cake-acll.pdf
+
+## Para usar a versão atual (3.6.1) do CakePHP
+Após instalar o CakePHP 3.5.13 e instalar e habilitar o plugin cake-acl-br, instale o migrations
+
+    composer require --update-with-dependencies "cakephp/cakephp:3.6.*"
+Atualize o DebugKit
+
+    composer require cakephp/debug_kit
+    
+Pronto, agora está com o CakePHP atualizado e o plugin cake-acl-br    
 
 ## Sugestões, colaborações e forks serão muto bem vindos:
 
