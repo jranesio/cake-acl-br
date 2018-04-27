@@ -56,3 +56,5 @@ EventManager::instance()->on(
         }
     }
 );
+
+Plugin::load('Migrations');
