@@ -62,17 +62,17 @@ class AppController extends Controller
               ]
         ]);		
 
-		$user = $this->request->session()->read('Auth.User');
+		$user = $this->request->getSession()->read('Auth.User');
 		$loguser = $user['username'];
 		$this->set('loguser',$loguser);
 		
 		$group=$user['group_id'];
 		$this->set('group',$group);
 		
-		$controller = $this->request->controller;
+		$controller = $this->request->getParam('controller');
 		$this->set('controller',$controller);
 		
-		$action = $this->request->action;
+		$action = $this->request->getParam('action');
 		// Via url: users/login?temp=default
 		// $layout=$this->request->query('temp');
 	    	// $this->set('template',$layout);
