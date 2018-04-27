@@ -70,9 +70,7 @@ class AppController extends Controller
 		$this->set('group',$group);
 		
 		$controller = $this->request->getParam('controller');
-		$this->set('controller',$controller);
-	    
-	    	$this->set('app_title','Título do Aplicativo');
+		$this->set('controller',$controller);	   
 		
 		$action = $this->request->getParam('action');
 		// Via url: users/login?temp=default
