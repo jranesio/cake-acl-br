@@ -11,6 +11,7 @@ Ainda não está compatível com a versão 3.6 diretamente, somente se instaland
     composer require --update-with-dependencies "cakephp/cakephp:3.6.*"
 
 E atualizando o plugin debig_kit
+
     composer require cakephp/debug_kit
 
 # Demo
