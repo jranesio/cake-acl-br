@@ -71,6 +71,8 @@ class AppController extends Controller
 		
 		$controller = $this->request->getParam('controller');
 		$this->set('controller',$controller);
+	    
+	    	$this->set('app_title','Título do Aplicativo');
 		
 		$action = $this->request->getParam('action');
 		// Via url: users/login?temp=default
