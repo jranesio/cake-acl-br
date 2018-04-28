@@ -100,7 +100,7 @@ Descompactar e abrir o diretório docs, então copiar:
 - Tente acessar qualquer outro action: edit, delete ou mesmo view. Observe também que vários outros recursos não aparecem para o 'user', busca, links, etc
 
 ## Controller default
-Em AppController.php você pode definir o controller default para usuários não administradores. Caso não use a tabela customers troque logo no início do AppController por uma de suas tabelas na linha:
+Em AppController.php você pode definir o controller default para usuários não administradores. Caso não use a tabela customers troque logo no início do AppController por uma de suas tabelas na linha abaixo:
 
     protected $noAdmins = 'Customers';
     
