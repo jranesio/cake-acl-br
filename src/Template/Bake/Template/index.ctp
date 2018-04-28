@@ -49,7 +49,7 @@ $fields = collection($fields)
 	    echo $this->Form->create(null, ['type' => 'get']);
    	    echo $this->Form->label('Busca');
 	    echo $this->Form->input('search', ['class' => 'form-control', 'label' => false, 'style'=>'width:170px;',
-		'placeholder' => 'Entre um nome ou fone', 'value' => $this->request->query('search')]);	    
+		'placeholder' => 'Nome ou fone', 'value' => $this->request->getQuery('search')]);	    
 	    echo $this->Form->button('Busca');
 	    echo $this->Form->end();
 	*/
