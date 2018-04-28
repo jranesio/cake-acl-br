@@ -42,7 +42,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
         <h3 class="titulo"><?php echo $this->element('CakeAclBr.topmenu'). '<br>'.$this->fetch('title'). '<spam class="logado pull-right">Logado como: <strong>'. __($loguser).'</strong></spam>' ?></h3>
 <?php
     }else{
-        echo '<h3 class="titulo">Acesso ao Sistema</h3>';
+        echo '<h3 class="titulo" align="center">Acesso ao Sistema</h3>';
     }
 ?>
         <br>
