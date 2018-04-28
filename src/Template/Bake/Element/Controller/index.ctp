@@ -44,8 +44,8 @@
 		    $this->paginate = [
 		        'contain' => ['Users'],
 		        'conditions' => ['or' => [
-		            'Customers.name ilike' => '%' . $this->request->query('search') . '%',
-		            'Customers.phone ilike' => '%' . $this->request->query('search') . '%'
+		            'Customers.name ilike' => '%' . $this->request->getQuery('search') . '%',
+		            'Customers.phone ilike' => '%' . $this->request->getQuery('search') . '%'
 		        ]],
 		        'order' => ['Customers.id' => 'DESC' ]
 		    ];
@@ -53,8 +53,8 @@
 		    $this->paginate = [
 		        'contain' => ['Users'],
 		        'conditions' => ['or' => [
-		            'Customers.name like' => '%' . $this->request->query('search') . '%',
-		            'Customers.phone like' => '%' . $this->request->query('search') . '%'
+		            'Customers.name like' => '%' . $this->request->getQuery('search') . '%',
+		            'Customers.phone like' => '%' . $this->request->getQuery('search') . '%'
 		        ]],
 		        'order' => ['Customers.id' => 'DESC' ]
 		    ];
