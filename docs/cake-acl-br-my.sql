@@ -53,8 +53,7 @@ CREATE TABLE `customers` (
   `observation` text COLLATE utf8_unicode_ci,
   `created` datetime DEFAULT NULL,
   `modified` datetime DEFAULT NULL,
-  PRIMARY KEY (`id`),
-  KEY `customer_fk` (`user_id`)
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 INSERT INTO `customers` (`id`, `name`, `birthday`, `phone`, `observation`, `created`, `modified`) VALUES
