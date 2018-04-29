@@ -66,7 +66,7 @@ Instalar Plugin
 
 Baixe o plugin, crie o banco e importe o script existente na pasta docs do plugin baixado. Depois edite config/app.php para configurar o banco.
 
-Aproveite e configure também o controller default em config/routes.php para um de seu interesse.
+Aproveite e configure também o controller default em config/routes.php para Users e login.
 
 ## Habilitar o plugin
 
