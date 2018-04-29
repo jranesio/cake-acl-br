@@ -41,7 +41,8 @@ CREATE TABLE `permissions` (
   `created` datetime DEFAULT NULL,
   `modified` datetime DEFAULT NULL,
   PRIMARY KEY (`id`),
-  UNIQUE KEY `unique_key` (`group_id`,`controller`,`action`)
+  UNIQUE KEY `unique_key` (`group_id`,`controller`,`action`),
+  CONSTRAINT `perm_fk` FOREIGN KEY (`group_id`) REFERENCES `groups` (`id`) ON DELETE CASCADE ON UPDATE CASCADE  
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 DROP TABLE IF EXISTS `customers`;
