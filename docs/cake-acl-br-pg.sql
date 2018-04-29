@@ -34,7 +34,8 @@ CREATE TABLE permissions (
     action character varying(100) NOT NULL,
     created timestamp(0) without time zone DEFAULT NULL,
     modified timestamp(0) without time zone DEFAULT NULL,    
-    CONSTRAINT unique_key UNIQUE (group_id, controller, action)
+    CONSTRAINT unique_key UNIQUE (group_id, controller, action),
+    constraint perm_fk foreign key (group_id) references groups(id) ON DELETE CASCADE ON UPDATE CASCADE    
 );
 
 CREATE TABLE customers (
