@@ -5,22 +5,22 @@ Element para criar um menu que exibe somente links para controllers aos quais o 
 	if($loguser == 'super'){
 
 		foreach($supers as $controller){
-			echo '<div class="btn btn-primary">'.$this->Html->link(__($controller[0]), array('plugin'=>null,'controller'=>$controller[0],'action'=>'index')).'</div>';
+			echo '<div class="btn btn-primary">'.$this->Html->link(__($controller[0]), ['controller'=>$controller[0],'action'=>'index']).'</div>';
 		}
-		echo '&nbsp;&nbsp;<div class="btn btn-primary">&nbsp;'.$this->Html->link(__('Sair'), array('plugin'=>null,'controller'=>'Users','action'=>'logout')).'</div>';
+		echo '&nbsp;&nbsp;<div class="btn btn-primary">&nbsp;'.$this->Html->link(__('Sair'), ['controller'=>'Users','action'=>'logout']).'</div>';
 	}elseif($loguser == 'admin'){
 		foreach($admins as $controller){
-			echo '<div class="btn btn-primary">'.$this->Html->link(__($controller[0]), array('plugin'=>null,'controller'=>$controller[0],'action'=>'index')).'</div>';
+			echo '<div class="btn btn-primary">'.$this->Html->link(__($controller[0]), ['controller'=>$controller[0],'action'=>'index']).'</div>';
 		}
-		echo '&nbsp;&nbsp;<div class="btn btn-primary">&nbsp;'.$this->Html->link(__('Sair'), array('plugin'=>null,'controller'=>'Users','action'=>'logout')).'</div>';
+		echo '&nbsp;&nbsp;<div class="btn btn-primary">&nbsp;'.$this->Html->link(__('Sair'), ['controller'=>'Users','action'=>'logout']).'</div>';
 	}elseif($loguser == 'manager'){
 		foreach($managers as $controller){
-			echo '<div class="btn btn-primary">'.$this->Html->link(__($controller[0]), array('plugin'=>null,'controller'=>$controller[0],'action'=>'index')).'</div>';
+			echo '<div class="btn btn-primary">'.$this->Html->link(__($controller[0]), ['controller'=>$controller[0],'action'=>'index']).'</div>';
 		}
-		echo '&nbsp;&nbsp;<div class="btn btn-primary">&nbsp;'.$this->Html->link(__('Sair'), array('plugin'=>null,'controller'=>'Users','action'=>'logout')).'</div>';
+		echo '&nbsp;&nbsp;<div class="btn btn-primary">&nbsp;'.$this->Html->link(__('Sair'), ['controller'=>'Users','action'=>'logout']).'</div>';
 	}elseif($loguser == 'user'){
 		foreach($users as $controller){
-			echo '<div class="btn btn-primary">'.$this->Html->link(__($controller[0]), array('plugin'=>null,'controller'=>$controller[0],'action'=>'index')).'</div>';
+			echo '<div class="btn btn-primary">'.$this->Html->link(__($controller[0]), ['controller'=>$controller[0],'action'=>'index']).'</div>';
 		}
-		echo '&nbsp;&nbsp;<div class="btn btn-primary">&nbsp;'.$this->Html->link(__('Sair'), array('plugin'=>null,'controller'=>'Users','action'=>'logout')).'</div>';
+		echo '&nbsp;&nbsp;<div class="btn btn-primary">&nbsp;'.$this->Html->link(__('Sair'), ['controller'=>'Users','action'=>'logout']).'</div>';
 	}
