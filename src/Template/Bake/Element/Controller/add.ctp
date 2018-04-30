@@ -24,7 +24,7 @@ $compact = ["'" . $singularName . "'"];
     {
         $<%= $singularName %> = $this-><%= $currentModelName %>->newEntity();
         if ($this->request->is('post')) {
-            $<%= $singularName %> = $this-><%= $currentModelName %>->patchEntity($<%= $singularName %>, $this->request->getData);
+            $<%= $singularName %> = $this-><%= $currentModelName %>->patchEntity($<%= $singularName %>, $this->request->data);
             if ($this-><%= $currentModelName; %>->save($<%= $singularName %>)) {
                 $this->Flash->success(__('<%= strtolower($singularHumanName) %> foi salvo.'));
 
