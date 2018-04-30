@@ -27,6 +27,8 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
     <?= $this->Html->meta('icon') ?>
 
     <?= $this->Html->css('CakeAclBr.bootstrap.min.css') ?>
+    <?= $this->Html->script('CakeAclBr.jquery.min') ?>
+    <?= $this->Html->script('CakeAclBr.bootstrap.min') ?>    
     <?= $this->Html->css('custom.css') ?>
 
     <?php    echo $this->fetch('css'); ?>
@@ -40,7 +42,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
 ?>
         <h2 align="center" class="titulo"><?= $titulo ?></h2>        
         <h3 class="titulo"><?php echo $this->element('CakeAclBr.topmenu') ?></h3>
-        <div align="center" class="logado pull-left"><?= $this->fetch('title') ?></div><spam class="logado pull-right">Logado como: <strong><?=__($loguser) ?></strong></spam>
+        <div align="center" class="logado"><?= $this->fetch('title') ?></div><button type="button" class="btn btn-info" data-toggle="popover" title="Popover title" data-content="Aqui adicione a ajuda do usuário. Como ele deve proceder para usar o aplicativo." align="center">Ajuda</button><spam class="logado pull-right">Logado como: <strong><?=__($loguser) ?></strong></spam>        
 <?php
     }else{
         echo '<h3 class="titulo">Acesso ao Sistema</h3>';
