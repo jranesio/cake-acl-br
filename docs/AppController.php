@@ -62,6 +62,8 @@ class AppController extends Controller
               ]
         ]);		
 
+	        $this->set('titulo', 'Título do Aplicativo');
+	    
 		$user = $this->request->getSession()->read('Auth.User');
 		$loguser = $user['username'];
 		$this->set('loguser',$loguser);
