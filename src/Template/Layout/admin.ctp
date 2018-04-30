@@ -33,6 +33,12 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
 
     <?php    echo $this->fetch('css'); ?>
 
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('[data-toggle="popover"]').popover();   
+        });
+    </script>
+
 </head>
 <body>
     <header role="banner" class="navbar navbar-inverse">
@@ -42,7 +48,8 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
 ?>
         <h2 align="center" class="titulo"><?= $titulo ?></h2>        
         <h3 class="titulo"><?php echo $this->element('CakeAclBr.topmenu') ?></h3>
-        <div align="center" class="logado"><?= $this->fetch('title') ?></div><button type="button" class="btn btn-info" data-toggle="popover" title="Ajuda sobre o Aplicativo" data-content="Aqui adicione a ajuda do usuário. Como ele deve proceder para usar o aplicativo." align="center">Ajuda</button><spam class="logado pull-right">Logado como: <strong><?=__($loguser) ?></strong></spam>        
+        <button type="button" class="btn btn-info" data-toggle="popover" data-placement="bottom" title="Ajuda para o Aplicativo" data-content="Aqui adicione a ajuda do usuário. Como ele deve proceder para usar o aplicativo..">Ajuda</button>
+        <spam class="logado pull-right">Logado como: <strong><?=__($loguser) ?></strong></spam>        
 <?php
     }else{
         echo '<h3 class="titulo" align="center">Acesso ao Sistema</h3>';
