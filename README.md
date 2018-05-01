@@ -129,9 +129,6 @@ Em AppController.php você pode definir o controller default para usuários não
 ### Csutomização dos campos controller e actiion mudando de caixa de texto para combo
 <img src="images/super_add.png">
 
-## Documentação
-Alguns detalhes a mais - https://ribafs.github.io/cakephp/cake-acll.pdf
-
 ## Para usar a versão atual (3.6.1) do CakePHP
 Após instalar o CakePHP 3.5.13 e instalar e habilitar o plugin cake-acl-br, instale o migrations
 
