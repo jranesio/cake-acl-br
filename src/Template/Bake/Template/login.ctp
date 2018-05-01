@@ -19,7 +19,7 @@
         <?= $this->Form->create() ?>
         <fieldset>
             <legend><?= __('Favor entrar com seu login e senha') ?></legend>
-            <?= $this->Form->input('username', ['label'=>'Login', 'class'=>'col4']) ?>
+            <?= $this->Form->input('username', ['label'=>'Login', 'class'=>'col4', 'autofocus'=>'true']) ?>
             <?= $this->Form->input('password',['label'=>'Senha', 'class'=>'col4']) ?>
         </fieldset>
         <?= $this->Form->button(__('Acessar')); ?>
