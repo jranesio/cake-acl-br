@@ -73,7 +73,7 @@ $pk = "\${$singularVar}->{$primaryKey[0]}";
 <%
                 } else {
 %>
-            echo $this->Form->input('<%= $field %>', ['options' => $<%= $keyFields[$field] %>]);
+            echo $this->Form->input('<%= $field %>', ['options' => $<%= $keyFields[$field] %>, 'autofocus'=>'true']);
 <%
                 }
                 continue;
