@@ -46,9 +46,10 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
 <?php
     if($loguser){
 ?>
-        <h2 align="center" class="titulo"><?= $titulo ?></h2>        
+        <h2 align="center" class="titulo"><?= $titulo ?></h2>
         <h3 class="titulo"><?php echo $this->element('CakeAclBr.topmenu') ?></h3>
-        <button type="button" class="btn btn-info" data-toggle="popover" data-placement="bottom" title="Ajuda para o Aplicativo" data-content="Aqui adicione a ajuda do usuário. Como ele deve proceder para usar o aplicativo..">Ajuda</button>
+        <button type="button" class="btn btn-info col-md-1" data-toggle="popover" data-placement="bottom" title="Ajuda para o Aplicativo" data-content="Aqui adicione a ajuda do usuário. Como ele deve proceder para usar o aplicativo..">Ajuda</button><div class="col-md-4"></div>
+        <spam class="logado col-centered"><?= $this->fetch('title') ?></spam>
         <spam class="logado pull-right">Logado como: <strong><?=__($loguser) ?></strong></spam>        
 <?php
     }else{
