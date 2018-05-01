@@ -8,12 +8,13 @@ Pois este ainda não está funcionando. Desculpe, estou corrigindo.
 - CakePHP 3.5.13 (https://github.com/cakephp/cakephp/releases/download/3.5.13/cakephp-3-5-13.zip)
 Ainda não está compatível com a versão 3.6 diretamente. Precisamos aguardar que as coisas se deinam no CakePHP.
 
-# Demo
+## Demo
 http://ribafs.org/demo/
 
-O CakePHP 3.5.13 foi instalado juntamente com o plugin cake-acl-br e configurado para aceitar somente consultas do tipo select. Veja que quando tenta executar delete, update ou insert ele bloqueia e avisa que é apenas um demo. Consegui isso criando um banco e um usuário restrito e apenas com privilégios de select. E depois tratando as mensagens de erro e redirecionando para o logout. Você pode usar quanquer um dos usuários. É interessante que experimente todos os 4, para perceber a diferença de privilégios que eles têm e o ACL do plugin em ação.
+O CakePHP 3.5.13 foi instalado juntamente com o plugin cake-acl-br e configurado para aceitar somente consultas do tipo select por conta da segurança. Veja que quando tenta executar delete, update ou insert ele bloqueia e avisa que é apenas um demo. Isso foi feito ao criar um usuário restrito e apenas com privilégios de select. E depois tratando as mensagens de erro e redirecionando para o logout. Você pode usar qualquer um dos usuários. É interessante que experimente todos os 4, para perceber a diferença de privilégios que eles têm e o ACL do plugin em ação.
+Esta área permite dar uma olhada em um aplicativo já com o plugin instalado para ver se vale a pena você instalar ou não.
 
-Usuário - senha
+## Usuário - senha
 - super - super (pode tudo)
 - admin - admin (pode tudo mas somente nas tabelas groups, users e permissions)
 - manager - manager (pode tudo mas somente nas tabelas de negócio, no caso customers)
@@ -22,7 +23,7 @@ Usuário - senha
 Idealmente instale em um ambiente de testes para ter maior controle, pois o demos apenas permite selects nas tabelas.
 
 ## Continuação do cake-control-br
-Este projeto basicamente continua de onde parou o cake-control-br. Este começa com a novidade de uma área para demo. Esta área permite dar uma olhada no plugin implementado e já ver alguma coisa para ver se vale a pena você instalar ou no.
+Este projeto basicamente continua de onde parou o cake-control-br. Este começa com a novidade de uma área para demo. 
 
 [![Licença](https://img.shields.io/packagist/l/doctrine/orm.svg?maxAge=2592000)](https://github.com/ribafs/cake-control-br/blob/master/LICENSE)
 
@@ -44,10 +45,11 @@ https://github.com/ribafs/cake-acl-br
 
 Criar app:
 
-    Baixar o cake 3.5.13 daqui:
-    https://github.com/cakephp/cakephp/releases/download/3.5.13/cakephp-3-5-13.zip
-    Ou outra versão anterior. Enquanto o suporte ao Cake atual no sai.
-    Descompacte para seu diretório web
+Baixar o cake 3.5.13 daqui:
+https://github.com/cakephp/cakephp/releases/download/3.5.13/cakephp-3-5-13.zip
+
+Ou outra versão anterior. Enquanto o suporte ao Cake atual no sai. Descompacte para seu diretório web
+    
     cd /var/www/html/acl1   
     
 Instalar Plugin
