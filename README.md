@@ -27,7 +27,7 @@ Este projeto basicamente continua de onde parou o cake-control-br. Este começa 
 
 URL deste projeto - https://github.com/ribafs/cake-acl-br/
 
-Este plugin inclue o plugin BootstrapUI e o (Twitter) Bootstrap e também inclui os templates do bake do plugin [twbs-cake-plugin](https://github.com/elboletaire/twbs-cake-plugin).
+Este plugin inclue o plugin BootstrapUI e o (Twitter) Bootstrap e também inclui os templates do bake do plugin [twbs-cake-plugin](https://github.com/elboletaire/twbs-cake-plugin) aos autores dos quais gostaria de agradecer.
 
 ## Principais recursos
     Template do bake traduzido para pt_BR
