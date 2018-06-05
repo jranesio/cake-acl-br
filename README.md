@@ -3,8 +3,7 @@ Plugin para Implementação de ACL no CakePHP 3
 
 Pois este ainda não está funcionando. Desculpe, estou corrigindo.
 
-**Nesta fase de transição da versão 3.6 para a 4.0, este plugin funciona somente com as versões:**
-- PHP 7.2
+**Nesta fase de transição da versão 3.6 para a 4.0, este plugin funciona somente com a versão:**
 - CakePHP 3.5.13 (https://github.com/cakephp/cakephp/releases/download/3.5.13/cakephp-3-5-13.zip)
 Ainda não está compatível com a versão 3.6 diretamente. Precisamos aguardar que as coisas se deinam no CakePHP.
 
