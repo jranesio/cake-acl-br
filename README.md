@@ -1,6 +1,6 @@
-## Plugin para Implementação de ACL no CakePHP 3
+# Plugin para Implementação de ACL no CakePHP 3
 
-# Dizendo não para o lado negro da força (MS) mudei para o GitLab. Manterei os arquivos aqui em respeito aos usuários e ao antigo GitHub mas estarei atualizando somente no GitLab daqui pra frente.
+### Com a compra do GitHub pela (MS) fiz uma cópia deste repositório no GitLab.
 https://github.com/ribafs/cake-acl-br
 
 Pois este ainda não está funcionando. Desculpe, estou corrigindo.
