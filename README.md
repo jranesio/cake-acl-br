@@ -3,11 +3,6 @@
 ### Com a compra do GitHub pela (MS) fiz uma cópia deste repositório no GitLab.
 https://github.com/ribafs/cake-acl-br
 
-Pois este ainda não está funcionando. Desculpe, estou corrigindo.
-
-**Nesta fase de transição da versão 3.6 para a 4.0, este plugin funciona somente com a versão:**
-- CakePHP 3.5.13 (https://github.com/cakephp/cakephp/releases/download/3.5.13/cakephp-3-5-13.zip)
-
 ## Demo
 http://ribafs.org/demo/
 
@@ -45,10 +40,9 @@ https://github.com/ribafs/cake-acl-br
 
 Criar app:
 
-Baixar o cake 3.5.13 daqui:
-https://github.com/cakephp/cakephp/releases/download/3.5.13/cakephp-3-5-13.zip
+Instalar o CakePHP, por exemplo
 
-Ou outra versão anterior. Enquanto o suporte ao Cake atual no sai. Descompacte para seu diretório web
+composer create-project --prefer-dist cakephp/app acl1
     
     cd /var/www/html/acl1   
     
@@ -59,7 +53,9 @@ Instalar Plugin
 
 ## Configurar banco
 
-Baixe o plugin, crie o banco e importe o script existente na pasta docs do plugin baixado. Depois edite config/app.php para configurar o banco.
+Baixe o plugin, crie o banco e importe o script existente na pasta docs do plugin baixado. Depois edite config/app.php para configurar o banco. Configure o app.php para não mostrar as mensagens de deprecated:
+    'Error' => [
+        'errorLevel' => E_ALL & ~E_USER_DEPRECATED,
 
 Aproveite e configure também o controller default em config/routes.php para Users e login.
 
