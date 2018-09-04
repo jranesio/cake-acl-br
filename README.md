@@ -55,7 +55,6 @@ Ou outra versão anterior. Enquanto o suporte ao Cake atual no sai. Descompacte 
 Instalar Plugin
 
     cd /var/www/html/acl1
-    composer install
     composer require ribafs/cake-acl-br
 
 ## Configurar banco
