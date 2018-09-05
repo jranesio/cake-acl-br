@@ -57,7 +57,9 @@ Instalar Plugin
 ## Configurar banco
 
 Baixe o plugin, crie o banco e importe o script existente na pasta docs do plugin baixado. Depois edite config/app.php para configurar o banco. Configure o app.php para não mostrar as mensagens de deprecated:
+
     'Error' => [
+    
         'errorLevel' => E_ALL & ~E_USER_DEPRECATED,
 
 Aproveite e configure também o controller default em config/routes.php para Users e login.
