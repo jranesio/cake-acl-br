@@ -3,12 +3,6 @@
 ### Com a compra do GitHub pela (MS) fiz uma cópia deste repositório no GitLab.
 https://github.com/ribafs/cake-acl-br
 
-## Demo
-http://ribafs.org/demo/
-
-O CakePHP 3.5.13 foi instalado juntamente com o plugin cake-acl-br e configurado para aceitar somente consultas do tipo select por conta da segurança. Veja que quando tenta executar delete, update ou insert ele bloqueia e avisa que é apenas um demo. Isso foi feito ao criar um usuário restrito e apenas com privilégios de select. E depois tratando as mensagens de erro e redirecionando para o logout. Você pode usar qualquer um dos usuários. É interessante que experimente todos os 4, para perceber a diferença de privilégios que eles têm e o ACL do plugin em ação.
-Esta área permite dar uma olhada em um aplicativo já com o plugin instalado para ver se vale a pena você instalar ou não.
-
 ## Atenção
 Até a versão anterior não estava conseguindo usar o plugin cake-ack-br nas versões do Cake, mas acabo de testar com o 3.6.11 com sucesso.
 
