@@ -4,7 +4,7 @@
 https://github.com/ribafs/cake-acl-br
 
 ## Atenção
-Até a versão anterior não estava conseguindo usar o plugin cake-ack-br nas versões do Cake, mas acabo de testar com o 3.6.11 com sucesso.
+Testado com a versão 3.6.11 do CakePHP.
 
 ## Usuário - senha
 - super - super (pode tudo)
