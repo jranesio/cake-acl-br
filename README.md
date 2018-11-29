@@ -3,7 +3,7 @@
 ### Com a compra do GitHub pela (MS) fiz uma cópia deste repositório no GitLab.
 
 ## Atenção
-Testado com a versão 3.6.16 do CakePHP.
+Testado com a versão 3.6.13 do CakePHP.
 
 ## Usuário - senha
 - super - super (pode tudo)
